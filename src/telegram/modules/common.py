@@ -9,7 +9,7 @@ async def start(update: Update, context: CallbackContext) -> None:
     ]
     
     markup = InlineKeyboardMarkup(keyboard)
-    update.message.reply_text(
+    await update.message.reply_text(
         text='Как выберем слово?',
         reply_markup=markup,
     )
