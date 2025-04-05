@@ -3,9 +3,9 @@ from telegram.ext import CallbackContext
 
 async def start(update: Update, context: CallbackContext) -> None:
     keyboard = [
-        [InlineKeyboardButton('Слово дня', callback_data='gamemode->word_day')],
-        [InlineKeyboardButton('Свое Слово', callback_data='gamemode->custom')],
-        [InlineKeyboardButton('Feel lucky', callback_data='gamemode->random')],
+        [InlineKeyboardButton('Слово дня', callback_data='gamemode:word_day')],
+        [InlineKeyboardButton('Свое Слово', callback_data='gamemode:custom')],
+        [InlineKeyboardButton('Feel lucky', callback_data='gamemode:random')],
     ]
     
     markup = InlineKeyboardMarkup(keyboard)
